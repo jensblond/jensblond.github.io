@@ -1,0 +1,125 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+// Include theme-specific fonts
+@font-face {
+	font-family: 'Guardian Sans Web';
+	src: url('../../lib/font/Guardian Sans Web-Regular.eot');
+	src: url('../../lib/font/Guardian Sans Web-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/Guardian Sans Web-Regular.woff') format('woff'),
+		 url('../../lib/font/Guardian Sans Web-Regular.ttf') format('truetype'),
+		 url('../../lib/font/Guardian Sans Web-Regular.svg#GuardianSansWebRegular') format('svg');
+
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Guardian Sans Web';
+	src: url('../../lib/font/Guardian Sans Web-Semibold.eot');
+	src: url('../../lib/font/Guardian Sans Web-Semibold.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/Guardian Sans Web-Semibold.woff') format('woff'),
+		 url('../../lib/font/Guardian Sans Web-Semibold.ttf') format('truetype'),
+		 url('../../lib/font/Guardian Sans Web-Semibold.svg#GuardianSansWebSemibold') format('svg');
+
+	font-weight: bold;
+	font-style: normal;
+}
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Guardian Sans Web', sans-serif;
+$mainFontSize: 32px;
+$mainColor: #01193B;
+$headingFont: 'Guardian Sans Web', Impact, sans-serif;
+$headingColor: rgb(0,25,60);
+$headingTextShadow: none;
+$headingTextTransform: none;
+$headingLineHeight: 0.9em;
+$headingLetterSpacing: 0.02em;
+$heading1TextShadow: none;
+
+$backgroundColor: #fff;
+$linkColor: #00008B;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+$default_height: 800px;
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+header {
+	padding: 10px;
+	background: #f4f4f4;
+}
+h1.green, h2.green, h3.green, h4.green {
+	color: #89ba17;	
+}
+.green {
+	color: #89ba17;
+}
+.yellow {
+	color: #FFCC00;
+}
+.red {
+	color: #FF0000;
+}
+.reveal {
+	letter-spacing: 1px;
+	.left {
+		text-align: left;
+	}
+	h2 {
+		text-align: left;
+		font-weight: bold;
+	}
+	ul {}
+	li { margin: 10px 0}
+	.content {
+		h3.border {
+			border-bottom: 2px solid $headingColor;
+			text-align: left;
+			margin-bottom: 1em;
+		}
+		.cont {
+			height: $default_height - 200;
+		}
+		footer {
+			hr {
+				border: none;
+				border-bottom: 2px solid $headingColor;
+			}
+			.line {
+				float:left;
+				width:500px;
+			}
+		}
+	}
+}
+
+.reveal section img {
+	border: none;
+	box-shadow: none;
+	background: none;
+}
+
+#first {
+	h3 {
+		text-align: left;
+	}
+	.bg {
+		background: #fff url("../../img/bg.png") no-repeat left top;
+		height: $default_height;
+	}
+}
+
