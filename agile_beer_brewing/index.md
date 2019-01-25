@@ -19,11 +19,11 @@ so entstehen bestimmte Emzyme die später die Stärke in Maltose umwandeln.
 
 ---
 
-### Malen
+### Schroten
 
 ![](milled_malt.jpg)
 
-Das Malz muss vorher gemalen werden, dabei ist es wichtig, dass die Spelzen intakt bleiben.
+Das Malz muss vorher geschrotet werden, dabei ist es wichtig, dass die Spelzen intakt bleiben.
 
 ---
 
